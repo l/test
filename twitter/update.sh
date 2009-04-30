@@ -8,6 +8,6 @@ fi
 
 vi ${STATUS}
 
-. ./update.sh -a ${ACCOUNT} -s ${STATUS}
+sh ./update_main.sh -a ${ACCOUNT} -s ${STATUS}
 
 rm ${STATUS}
