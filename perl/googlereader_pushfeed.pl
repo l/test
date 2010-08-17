@@ -4,16 +4,16 @@
 # by "AYANOKOUZI, Ryuunosuke" <i38w7i3@yahoo.co.jp>
 # under GNU General Public License v3.
 #
-# $ perl googlereader_pushfeed.pl --config ~/.google.json --uri 'http://example.com/feed'
+# $ perl googlereader_pushfeed.pl --config ~/.google.json --uri 'http://example.com/'
 #
 
 use strict;
 use warnings;
 use Data::Dumper;
 use Getopt::Long;
+use IO::File;
 use JSON;
 use URI;
-use IO::File;
 use Web::Scraper;
 use WebService::Google::Reader;
 
