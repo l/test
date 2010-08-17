@@ -1,4 +1,12 @@
 #!/usr/bin/perl
+#
+# googlereader_pushfeed.pl is written
+# by "AYANOKOUZI, Ryuunosuke" <i38w7i3@yahoo.co.jp>
+# under GNU General Public License v3.
+#
+# $ perl googlereader_pushfeed.pl --config ~/.google.json --uri 'http://example.com/feed'
+#
+
 use strict;
 use warnings;
 use Data::Dumper;
