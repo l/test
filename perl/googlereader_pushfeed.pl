@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-
 #
 # googlereader_pushfeed.pl is written
 # by "AYANOKOUZI, Ryuunosuke" <i38w7i3@yahoo.co.jp>
