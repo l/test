@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# Usage: 
+# orange-park auto provider for obtained points
 #
 # $ perl orange-park.pl --config orange-park.json --id 1 --point 100
 #
