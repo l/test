@@ -15,13 +15,34 @@ use IO::File;
 use JSON;
 
 my %opts = ();
-GetOptions(\%opts, 'config=s');
+GetOptions(\%opts, 'config=s', 'id=i');
 
 my $io = IO::File->new();
 $io->open($opts{config}, 'r') or die $!;
-my $config = decode_json(join '', $io->getlines);
+my $config;
+{
+	local $/ = undef;
+	$config = decode_json($io->getline);
+}
 $io->close;
 
 print Dumper $config;
+
+my $json  = new JSON;
+$json->pretty;
+print $json->canonical->encode($config);
+
+my $conf = {};
+$conf->{email} = $config->{email} || die 'undefined email';
+$conf->{password} = $config->{password} || die 'undefined password';
+$conf->{id} = $opts{id} || 0;
+
+main($conf);
 exit;
+
+sub main
+{
+	my $conf = shift;
+	return;
+}
 __END__
