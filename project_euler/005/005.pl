@@ -4,6 +4,7 @@ use strict;
 use Data::Dumper;
 
 main();
+exit;
 
 sub main
 {
@@ -43,8 +44,6 @@ sub int_fact
 	}
 	return $result;
 }
-
-exit;
 __END__
 2 2^1;
 3       3^1;

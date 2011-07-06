@@ -3,6 +3,7 @@ use warnings;
 use strict;
 
 main();
+exit;
 
 sub main
 {
@@ -29,6 +30,4 @@ sub main
 	print $sum;
 	return 0;
 }
-
-exit;
 __END__

@@ -3,6 +3,7 @@ use warnings;
 use strict;
 
 main();
+exit;
 
 sub main
 {
@@ -31,5 +32,4 @@ sub is_prime
 	}
 	return 1;
 }
-exit;
 __END__

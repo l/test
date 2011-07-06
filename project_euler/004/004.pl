@@ -3,6 +3,7 @@ use warnings;
 use strict;
 
 main();
+exit;
 
 sub main
 {
@@ -32,5 +33,4 @@ sub is_palindromic
 		return 0;
 	}
 }
-exit;
 __END__
