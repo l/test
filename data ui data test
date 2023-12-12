@@ -1,0 +1,15 @@
+
+io->open( $opts{config}, 'r' )  
+
+Data ui 
+
+ 
+
+No data ui test 
+
+Data test 
+
+my $config = decode_json( join '', $io->getlines ); 
+
+Data ui
+Data test
